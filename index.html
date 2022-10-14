@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kalkulator walutowy">
+    <meta name="keywords" content="waluty, pieniądze,kury walut,kalkulator">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script defer src="js/kalkulator.js"></script>
+    <title>Kalkulator walutowy</title>
+</head>
+
+<body class="body">
+    <div class="body__canvas">
+        <header></header>
+        <header class="header">
+            <h1 class="header__mainTitle">Kalkulator walutowy</h1>
+        </header>
+        <main>
+            <form class="form js-form">
+                <label class="form__label">Kwota*:<br>
+                    <input type="number" name="amountOfMoney" required min="0" step="0.01" placeholder="Wpisz kwotę"
+                        class="form__element js-amountOfMoney">
+                </label>
+                <label class="form__label">Mam:<br>
+                    <select class="form__element js-inputCurrency">
+                        <option value="4.8606" selected>EUR</option>
+                        <option value="4.9588">USD</option>
+                        <option value="5.0065">CHF</option>
+                        <option value="5.5505">GBP</option>
+                        <option value="1.0">PLN</option>
+                    </select>
+                </label>
+
+                <span class="material-symbols-outlined form__element form__element--arrows js-arrows">sync_alt</span>
+
+                <label class="form__label">Chcę otrzymać:<br>
+                    <select class="form__element js-outputCurrency">
+                        <option value="4.8606">EUR</option>
+                        <option value="4.9588">USD</option>
+                        <option value="5.0065">CHF</option>
+                        <option value="5.5505">GBP</option>
+                        <option value="1.0" selected>PLN</option>
+                    </select>
+                </label>
+                <input type="submit" value="Przelicz" class="form__element form__element--button js-submit">
+            </form>
+            <p class="form__paragraph--result js-result"></p>
+            <p class="form__paragraph">EUR 4.8606; USD 4.9588; CHF 5.0065; GBP 5.5505</p>
+        </main>
+        <footer class="footer">
+            <p class="footer__paragraph">
+                Kalkulator walutowy © Wszystkie prawa zastrzeżone<br>
+                Warszawa 2022
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

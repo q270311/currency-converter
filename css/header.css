@@ -1,0 +1,8 @@
+.header {
+    color: #363738;
+}
+
+.header__mainTitle {
+    font-size: 50px;
+    font-weight: 600;
+}

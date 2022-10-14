@@ -1,0 +1,10 @@
+.footer {
+    border-radius: 10px;
+}
+
+.footer__paragraph {
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 700;
+}
