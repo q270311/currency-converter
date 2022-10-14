@@ -9,7 +9,9 @@ html {
 }
 
 .body {
-    background-color: rgb(190, 186, 186);
+    background-image: url("../img/credit-card-2.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .body__canvas {
