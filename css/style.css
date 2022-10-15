@@ -19,6 +19,7 @@ html {
     margin: 50px auto;
     padding: 20px;
     max-width: 1000px;
-    background-color: #e5eaf0c0;
+    background-color: rgba(229, 234, 240, 0.91);
+    box-shadow: 5px 5px 24px -10px rgb(31, 32, 44);
     border-radius: 20px;
 }

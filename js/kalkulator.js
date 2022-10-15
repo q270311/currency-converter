@@ -13,7 +13,7 @@
         const calculation = (amountOfMoney * inputCurrency / outputCurrency).toFixed(2);
         return `${amountOfMoney} ${inputCurrencyText} = <strong>${calculation} ${outputCurrencyText}</strong>`;
     }
-    const switchCyrrency = (inputCurrencyElement, outputCurrencyElement) => {
+    const swapCurrencies = (inputCurrencyElement, outputCurrencyElement) => {
         const inputCurrencySelectedIndex = inputCurrencyElement.selectedIndex;
         const outputCurrencySelectedIndex = outputCurrencyElement.selectedIndex;
         const tmp = inputCurrencySelectedIndex;
@@ -29,13 +29,13 @@
         const formElement = document.querySelector(".js-form");
         formElement.addEventListener("submit", (event) => {
             event.preventDefault();
-            const text = convertCurrencies(amountOfMoneyElement, inputCurrencyElement, outputCurrencyElement);
-            updateResultText(text);
+            const resultText = convertCurrencies(amountOfMoneyElement, inputCurrencyElement, outputCurrencyElement);
+            updateResultText(resultText);
         });
 
         const currencySwitchElement = document.querySelector(".js-arrows");
         currencySwitchElement.addEventListener("click", () => {
-            switchCyrrency(inputCurrencyElement, outputCurrencyElement);
+            swapCurrencies(inputCurrencyElement, outputCurrencyElement);
         });
     }
     init();
