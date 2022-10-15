@@ -17,4 +17,7 @@ Calculation result is displayed up to two decimal place
 ## Languages
  - HTML
  - CSS
+ - BEM
+ - FLEX
  - JavaScript
+ - ES6+ features

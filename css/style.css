@@ -9,7 +9,7 @@ html {
 }
 
 .body {
-    background-image: url("../img/credit-card-2.jpg");
+    background-image: url("../img/credit-card.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -19,6 +19,6 @@ html {
     margin: 50px auto;
     padding: 20px;
     max-width: 1000px;
-    background-color: hsla(213, 27%, 92%, 0.534);
+    background-color: #e5eaf0c0;
     border-radius: 20px;
 }
