@@ -12,13 +12,17 @@ html {
     background-image: url("../img/credit-card.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .body__canvas {
     font-family: Roboto, sans-serif;
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 1000px;
+    flex-basis: 900px;
+    padding: 10px;
+    margin: 10px;
     background-color: rgba(229, 234, 240, 0.91);
     box-shadow: 5px 5px 24px -10px rgb(31, 32, 44);
     border-radius: 20px;
